@@ -1,0 +1,9 @@
+target
+data
+web/node_modules
+web/dist
+.git
+.gitignore
+*.log
+Dockerfile
+docker-compose.yml

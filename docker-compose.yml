@@ -1,0 +1,16 @@
+services:
+  rustest:
+    build: .
+    image: rustest:latest
+    container_name: rustest
+    ports:
+      - "3000:3000"
+    environment:
+      RUSTEST_PORT: "3000"
+      RUSTEST_TIMEOUT_SECS: "30"
+    volumes:
+      - rustest-data:/data
+    restart: unless-stopped
+
+volumes:
+  rustest-data:
